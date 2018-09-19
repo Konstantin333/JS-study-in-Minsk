@@ -2,7 +2,7 @@
 
 var array = ['qwert', 'asdf','ldkjmfgnrc','wdwdwd','aaaaaaabbbbbbbbcccccccc'];
 
-function longOfString (a) { 
+function lengthOfString (a) { 
     var search = 0;
     for (var i = 0; i < a.length; i++) { 
         if (a[i].length > search) {
@@ -13,5 +13,5 @@ function longOfString (a) {
     return longestWord;
 } 
     
-var result = longOfString(array); 
+var result = lengthOfString(array); 
 console.log(result);
