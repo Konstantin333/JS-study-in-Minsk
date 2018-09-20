@@ -8,7 +8,7 @@ function getArrayWithLargestSum(a) {
     second = a[1],
     sum1 = 0,
     sum2 = 0;
-    for (var i = 2; i < a.length; i++) {
+    for (var i = 1; i < a.length; i++) {
         for (var j = 0; j < a[i].length; j++) {
             sum1 += second[j];
             sum2 += first[j];
