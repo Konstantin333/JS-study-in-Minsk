@@ -5,7 +5,7 @@ for (var i = 1; i <= 100; i++) {
 
 function getArrayOfMultipleFour (a) {
     var newArray = [];
-    for (i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         if (a[i] % 4 === 0) {
             newArray.push(a[i]);
         }

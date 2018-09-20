@@ -1,13 +1,13 @@
 var array = [1, 2, 34, 'Hi,', 'Max!', 123, 'How are you?'];
 
-function copyArray (a) {
+function getCopyArray (a) {
     var newArray = ['Это новый массив:']; //прописал эту строку в массиве, чтобы показать, что происходит именно копирование
-    for (i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         newArray.push(a[i]);
     }
     return newArray;
 }
 
-var result = copyArray(array);
+var result = getCopyArray(array);
 console.log(array); //1-й массив;
 console.log(result); //новый массив с копией элементов 1-го
