@@ -1,14 +1,14 @@
-var array1 = [1, 2, 4, -25];
-var array2 = [34, -23, 132, 23];
-var array3 = [-122, -12, 0, -89];
+const array1 = [1, 2, 4, -25],
+array2 = [34, -23, 132, 23],
+array3 = [-122, -12, 0, -89];
 
-var mainArray = [array1, array2, array3];
+const mainArray = [array1, array2, array3];
 
 function getArrayOfLargestNumbers (a) {
-    var newArray = [];
-    for (var i = 0; i < a.length; i++) {
-        var searchLargestNumber = 0;
-        for (var j = 0; j < a[i].length;j++) {
+    const newArray = [];
+    for (let i = 0; i < a.length; i++) {
+        let searchLargestNumber = 0;
+        for (let j = 0; j < a[i].length;j++) {
             if (a[i][j] > searchLargestNumber) {
                 searchLargestNumber = a[i][j];
             }
@@ -18,5 +18,5 @@ function getArrayOfLargestNumbers (a) {
     return newArray;
 }
 
-var result = getArrayOfLargestNumbers(mainArray);
+let result = getArrayOfLargestNumbers(mainArray);
 console.log(result);

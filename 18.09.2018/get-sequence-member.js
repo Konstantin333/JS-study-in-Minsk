@@ -4,10 +4,10 @@
 б). выводит массив с со всей последовательностью до n.*/
 
 function getSequenceMember(n) {
-    var a = 0, 
+    let a = 0, 
     b = 1;
-    for (i = 3; i <= n; i++) {
-        var c = a + b;
+    for (let i = 3; i <= n; i++) {
+        let c = a + b;
         a = b;
         b = c;
     }
@@ -17,12 +17,12 @@ function getSequenceMember(n) {
     return b;
 }
 
-var resultA = getSequenceMember(9); 
+let resultA = getSequenceMember(9); 
 console.log(resultA);
 
 function getArrayOfSequences(n) {
-    var array = [];
-    var a = 0,
+    const array = [];
+    let a = 0,
     b = 1;
     if (n === 1) {
         array.push(a);
@@ -30,8 +30,8 @@ function getArrayOfSequences(n) {
     } else {
         array.push(a, b);   
     }
-    for (var i = 3; i <= n; i++) {
-        var c = a + b;
+    for (let i = 3; i <= n; i++) {
+        let c = a + b;
         a = b;
         b = c;
         array.push(b);
@@ -39,5 +39,5 @@ function getArrayOfSequences(n) {
     return array;
   }
 
-var resultB = getArrayOfSequences(9); 
+let resultB = getArrayOfSequences(9); 
 console.log(resultB);
