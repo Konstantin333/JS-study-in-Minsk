@@ -1,7 +1,5 @@
 //Функция на вход принимает массив из строк и возвращает самую длинную.
 
-const array = ['qwert', 'asdf','ldkjmfgnrc','wdwdwd','aaaaaaabbbbbbbbcccccccc'];
-
 function lengthOfString (a) { 
     let search = 0;
     let longestWord = 0;
@@ -13,6 +11,8 @@ function lengthOfString (a) {
     }      
     return longestWord;
 } 
+
+const array = ['qwert', 'asdf','ldkjmfgnrc','wdwdwd','aaaaaaabbbbbbbbcccccccc'];
     
 let result = lengthOfString(array); 
 console.log(result);

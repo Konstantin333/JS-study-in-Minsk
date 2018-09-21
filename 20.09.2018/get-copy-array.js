@@ -1,5 +1,3 @@
-const array = [1, 2, 34, 'Hi,', 'Max!', 123, 'How are you?'];
-
 function copyArray(a) {
     const newArray = [];
     for (let i = 0; i < a.length; i++) {
@@ -7,6 +5,8 @@ function copyArray(a) {
     }
     return newArray;
 }
+
+const array = [1, 2, 34, 'Hi,', 'Max!', 123, 'How are you?'];
 
 let result = copyArray(array);
 console.log(array); //1-й массив;

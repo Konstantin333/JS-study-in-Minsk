@@ -2,8 +2,6 @@
 
 //а). Найти наибольший общий их префикс;
 
-const array = ['AB12qwertCD34', 'AB12zzxczxzczczcCD34', 'AB12123456767899067676456CD34', 'AB12zxc123vbn565sdcsdcCD34']
-
 function showPrefix(a) {
     let maxWordLength = 0,
     prefix = 0;
@@ -25,6 +23,8 @@ function showPrefix(a) {
         } 
     return prefix;
     }
+
+const array = ['AB12qwertCD34', 'AB12zzxczxzczczcCD34', 'AB12123456767899067676456CD34', 'AB12zxc123vbn565sdcsdcCD34'];
 
 let resultPrefix = showPrefix(array);
 console.log(resultPrefix);
