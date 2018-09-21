@@ -3,7 +3,7 @@
 (первые два числа последовательности - 1 и 1, каждое следующее - сумма двух предыдущих)
 б). выводит массив с со всей последовательностью до n.*/
 
-function getSequenceMember(n) {
+function getSequencesArray(n) {
     let a = 0, 
     b = 1;
     for (let i = 3; i <= n; i++) {
@@ -17,7 +17,7 @@ function getSequenceMember(n) {
     return b;
 }
 
-let resultA = getSequenceMember(9); 
+let resultA = getSequencesArray(9); 
 console.log(resultA);
 
 function getArrayOfSequences(n) {

@@ -1,8 +1,3 @@
-const array = [];
-for (let i = 1; i <= 100; i++) {
-    array.push(i)
-}
-
 function getArrayOfMultipleFour (a) {
     const newArray = [];
     for (let i = 0; i < a.length; i++) {
@@ -11,6 +6,11 @@ function getArrayOfMultipleFour (a) {
         }
     }
     return newArray;
+}
+
+const array = [];
+for (let i = 1; i <= 100; i++) {
+    array.push(i)
 }
 
 let result = getArrayOfMultipleFour(array);

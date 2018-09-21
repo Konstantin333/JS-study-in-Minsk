@@ -1,6 +1,6 @@
 const array = ['123', '456', '89', '-124'];
 
-function getFromStringsToNumbers(a) {
+function stringsToNumbers(a) {
     const newArray = [];
     for (let i = 0; i < a.length; i++) {
         newArray.push(Number(a[i]));
@@ -8,5 +8,5 @@ function getFromStringsToNumbers(a) {
     return newArray;
 }
 
-let result = getFromStringsToNumbers(array);
+let result = stringsToNumbers(array);
 console.log(result);

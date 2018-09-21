@@ -1,4 +1,4 @@
-const array1 = [1, 23, -23, 12],
+let array1 = [1, 23, -23, 12],
 array2 = [23, 45, 0, -2],
 array3 = [10, 11, 12, 13, -13, -12, -11, -10, 0],
 mainArray = [array1, array2, array3];
