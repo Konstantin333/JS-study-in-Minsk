@@ -12,10 +12,10 @@ function getArrayOfLargestNumbers (a) {
     return newArray;
 }
 
-const array1 = [1, 2, 4, -25],
-array2 = [34, -23, 132, 23],
-array3 = [-122, -12, 0, -89],
-mainArray = [array1, array2, array3];
+const array1 = [1, 2, 4, -25];
+const array2 = [34, -23, 132, 23];
+const array3 = [-122, -12, 0, -89];
+const mainArray = [array1, array2, array3];
 
-let result = getArrayOfLargestNumbers(mainArray);
+const result = getArrayOfLargestNumbers(mainArray);
 console.log(result);

@@ -17,7 +17,7 @@ function getSequencesArray(n) {
     return b;
 }
 
-let resultA = getSequencesArray(9); 
+const resultA = getSequencesArray(9); 
 console.log(resultA);
 
 function getArrayOfSequences(n) {
@@ -37,7 +37,7 @@ function getArrayOfSequences(n) {
         array.push(b);
     }
     return array;
-  }
+}
 
-let resultB = getArrayOfSequences(9); 
+const resultB = getArrayOfSequences(9); 
 console.log(resultB);

@@ -12,5 +12,5 @@ for (let i = 1; i <= 10; i++) {
 }
 
 
-let result = numbersToString(array);
+const result = numbersToString(array);
 console.log(result);

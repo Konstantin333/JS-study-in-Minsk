@@ -14,5 +14,5 @@ function lengthOfString (a) {
 
 const array = ['qwert', 'asdf','ldkjmfgnrc','wdwdwd','aaaaaaabbbbbbbbcccccccc'];
     
-let result = lengthOfString(array); 
+const result = lengthOfString(array); 
 console.log(result);

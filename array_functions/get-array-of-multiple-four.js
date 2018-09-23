@@ -13,5 +13,5 @@ for (let i = 1; i <= 100; i++) {
     array.push(i)
 }
 
-let result = getArrayOfMultipleFour(array);
+const result = getArrayOfMultipleFour(array);
 console.log(result);

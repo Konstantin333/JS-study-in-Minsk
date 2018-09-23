@@ -26,7 +26,7 @@ function showPrefix(a) {
 
 const array = ['AB12qwertCD34', 'AB12zzxczxzczczcCD34', 'AB12123456767899067676456CD34', 'AB12zxc123vbn565sdcsdcCD34'];
 
-let resultPrefix = showPrefix(array);
+const resultPrefix = showPrefix(array);
 console.log(resultPrefix);
 
 //б). Найти наибольший общий их постфикс.
@@ -51,7 +51,7 @@ function showPostfix(a) {
             }
         } 
     return postfix.split('').reverse().join('');
-    }
+}
 
-let resultPostfix = showPostfix(array);
+const resultPostfix = showPostfix(array);
 console.log(resultPostfix);

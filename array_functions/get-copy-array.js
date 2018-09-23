@@ -8,6 +8,6 @@ function copyArray(a) {
 
 const array = [1, 2, 34, 'Hi,', 'Max!', 123, 'How are you?'];
 
-let result = copyArray(array);
+const result = copyArray(array);
 console.log(array); //1-й массив;
 console.log(result); //новый массив с копией элементов 1-го
