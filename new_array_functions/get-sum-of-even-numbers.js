@@ -1,10 +1,10 @@
 function getSumOfEvenNumbers(a) {
     let sum = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] % 2 === 0) {
-            sum += a[i];
+    a.filter(function(e){
+        if (e % 2 === 0){
+            sum += e;
         }
-    }
+    })
     return sum;
 }
 

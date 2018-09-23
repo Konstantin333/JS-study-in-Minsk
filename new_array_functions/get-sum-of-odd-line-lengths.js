@@ -1,11 +1,11 @@
 function getSumOfOddLengths(a) {
     let sum = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i].length % 2 !== 0) {
-            let str = String(a[i]).length;
+    a.filter(function(e){
+        if (e.length % 2 !== 0) {
+            let str = String(e).length;
             sum += str;
         }
-    }
+    })
     return sum;
 }
 
