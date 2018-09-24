@@ -1,6 +1,6 @@
 function getSumOfOddLengths(a) {
     let sum = 0;
-    a.filter(function(e){
+    a.forEach(function(e){
         if (e.length % 2 !== 0) {
             let str = String(e).length;
             sum += str;

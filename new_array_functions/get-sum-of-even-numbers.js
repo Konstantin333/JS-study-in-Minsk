@@ -1,6 +1,6 @@
 function getSumOfEvenNumbers(a) {
     let sum = 0;
-    a.filter(function(e){
+    a.forEach(function(e){
         if (e % 2 === 0){
             sum += e;
         }
