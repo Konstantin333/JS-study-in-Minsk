@@ -1,10 +1,7 @@
 function getSumOfEvenNumbers(a) {
     let sum = 0;
-    a.forEach(function(e){
-        if (e % 2 === 0){
-            sum += e;
-        }
-    })
+    const filter = a.filter(function(e){return e % 2 === 0;})
+    .forEach(function(e){sum += e;})
     return sum;
 }
 
