@@ -1,8 +1,9 @@
 function getSumOfOddLengths(a) {
     let sum = 0;
-    let string = '';
     const filter = a.filter(function(e){return e.length % 2 !== 0})
-    .forEach(function(e){string = String(e).length, sum += string;});
+        .forEach(function(e){
+            sum += String(e).length;
+        });
     return sum;
 }
 
