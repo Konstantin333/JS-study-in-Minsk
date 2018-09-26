@@ -13,7 +13,7 @@ console.log(result);
 //б). - изменить свойство isRead на true. При этои не изменять ни исходный массив, ни исходные объекты.
 
 function markAllAsRead(a){
-    a.map(function(e){
+    a.forEach(function(e){
         e.isRead = true;
     })
     return a;
