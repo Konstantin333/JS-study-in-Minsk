@@ -1,9 +1,21 @@
 body {
   background-color: grey;
 }
+.container {
+  width: 600px;
+  height: 400px;
+  background-color: black;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rectangle {
   width: 300px;
   height: 100px;
   background-color: white;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
