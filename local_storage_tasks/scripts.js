@@ -50,3 +50,6 @@ const arrayOfDivs = getArrayOfDivs(array);
 const arrayOfStrings = getArrayOfStrings(arrayOfDivs);
 
 addContainer(div);
+
+const stringify = JSON.stringify(array);
+const parse = JSON.parse(stringify);
