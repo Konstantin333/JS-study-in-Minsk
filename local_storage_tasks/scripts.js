@@ -42,14 +42,34 @@ function getArrayOfStrings(arrDiv){
   return newArray;
 }
 
+function getContainerOfDivs (arrDiv) {
+  const newArray = [];
+  arrDiv.forEach(function(e){
+  const container = document.createElement('div');
+  container.classList.add('container');
+  document.body.appendChild(container);
+  container.appendChild(e);
+  newArray.push(container);
+  })
+  return newArray;
+}
+
+function getArrayOfDivsOfContainer(contDivs) {
+  const newArray = [];
+  [...contDivs].forEach(function(e){
+    newArray.push(e);
+  })
+  return newArray;
+}
+
 const string = 'Hello';
 const array = ['str1', 'str2', 'str3'];
 
 const div = addDiv(string);
 const arrayOfDivs = getArrayOfDivs(array);
 const arrayOfStrings = getArrayOfStrings(arrayOfDivs);
-
-addContainer(div);
+const containerOfDivs = getContainerOfDivs(arrayOfDivs);
+const arrayOfDivsOfContainer = getArrayOfDivsOfContainer(containerOfDivs);
 
 const stringify = JSON.stringify(array);
 const parse = JSON.parse(stringify);
