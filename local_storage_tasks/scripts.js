@@ -62,14 +62,43 @@ function getArrayOfDivsOfContainer(contDivs) {
   return newArray;
 }
 
+function getArrayOfDivsFromStrings(arr){
+  const newArray = [];
+  arr.forEach(e => {
+    const addDiv = document.createElement('div');
+    addDiv.classList.add('rectangle');
+    const text = document.createTextNode(e);
+    text.id = 'text';
+    addDiv.appendChild(text);
+    newArray.push(addDiv);
+  })
+  return newArray;
+}
+
+function addButton() {
+  const button = document.createElement('button');
+  const textOfButton = document.createTextNode('Сохранить информацию')
+  button.classList.add('button');
+  button.appendChild(textOfButton);
+  document.body.insertBefore(button, document.body.children[0]);
+  button.addEventListener('click', () => {
+    const key = 'text';
+    const text = 'value';
+    localStorage.getItem(key);
+    localStorage.setItem(key, text);
+  })
+}
+
 const string = 'Hello';
 const array = ['str1', 'str2', 'str3'];
 
 const div = addDiv(string);
+const getStr = getString(div);
 const arrayOfDivs = getArrayOfDivs(array);
 const arrayOfStrings = getArrayOfStrings(arrayOfDivs);
 const containerOfDivs = getContainerOfDivs(arrayOfDivs);
 const arrayOfDivsOfContainer = getArrayOfDivsOfContainer(containerOfDivs);
+const arrayOfDivsFromStrings = getArrayOfDivsFromStrings(array);
 
 const stringify = JSON.stringify(array);
 const parse = JSON.parse(stringify);
