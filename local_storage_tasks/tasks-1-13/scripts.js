@@ -84,7 +84,6 @@ function addButton() {
   button.addEventListener('click', () => {
     const key = 'text';
     const text = 'value';
-    localStorage.getItem(key);
     localStorage.setItem(key, text);
   })
 }
@@ -102,3 +101,5 @@ const arrayOfDivsFromStrings = getArrayOfDivsFromStrings(array);
 
 const stringify = JSON.stringify(array);
 const parse = JSON.parse(stringify);
+
+addButton();
