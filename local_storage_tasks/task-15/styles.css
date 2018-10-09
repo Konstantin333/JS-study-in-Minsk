@@ -1,25 +1,69 @@
 body {
   background-color: grey;
-}
-.container {
-  width: 600px;
-  height: 400px;
-  background-color: black;
-  border: 1px solid white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-.rectangle {
-  width: 300px;
-  height: 100px;
-  background-color: white;
-  border: 1px solid black;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
-.button {
-  width: 120px;
-  height: 40px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+    .input {
+      width: 200px;
+      height: 30px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 18px;
+    }
+    .button {
+      width: 100px;
+      height: 50px;
+      border-radius: 50px;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+  .container {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .rectangle {
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .del {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 15px;
+  }
+
+.animated {
+  animation: slideup 0.5s linear; 
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes slideup {
+  from {
+    transform: scale(1, 0);
+    height: 0;
+  }
+
+  to {
+    transform: scale(1, 1);
+    height: 50px;
+  }
 }
