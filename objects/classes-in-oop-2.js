@@ -1,20 +1,20 @@
-function setAcceleration(acceleration) {
+function accelerate(acceleration) {
   return this.speed + acceleration;
 }
 
-function setBraking(braking) {
+function brake(braking) {
   return this.speed - braking;
 }
 
-function Сars(speed) {
+function Сar(speed) {
   this.speed = speed;
 }
 
-Сars.prototype.setAcceleration = setAcceleration;
-Сars.prototype.setBraking = setBraking;
+Сar.prototype.accelerate = accelerate;
+Сar.prototype.brake = brake;
 
-const car = new Сars(60);
+const car = new Сar(60);
 console.log(car);
 console.log(car.speed);
-console.log(car.setAcceleration(20));
-console.log(car.setBraking(30));
+console.log(car.accelerate(20));
+console.log(car.brake(30));
